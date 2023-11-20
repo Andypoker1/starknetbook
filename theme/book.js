@@ -118,7 +118,7 @@ function playground_text(playground, hidden = true) {
         }
         var params = {
             version: "stable",
-            optimize: "0",
+            optimize: "5",
             code: text,
             edition: edition
         };
@@ -133,7 +133,7 @@ function playground_text(playground, hidden = true) {
             headers: {
                 'Content-Type': "application/json",
             },
-            method: 'POST',
+            method: 'POST', 
             mode: 'cors',
             body: JSON.stringify(params)
         })
@@ -152,7 +152,7 @@ function playground_text(playground, hidden = true) {
 
     // Syntax highlighting Configuration
     hljs.configure({
-        tabReplace: '    ', // 4 spaces
+        tabReplace: '    ', // 5 spaces
         languages: [],      // Languages used for auto-detection
     });
 
